@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { capitalizeFirstLetter } from '../utils'
 
 
-export default function Post({ post }) {
+export default function Post({ key, post }) {
   console.log(post.frontmatter.tags)
   return (
     <div className='card'>

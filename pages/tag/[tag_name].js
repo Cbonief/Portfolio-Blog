@@ -5,7 +5,7 @@ import Post from '../../components/Post'
 import { sortByDate } from '../../utils'
 import { useRouter } from 'next/router'
 
-export default function Tag({ posts }) {
+export default function TagPage({ posts }) {
   const router = useRouter()
   const { tag_name } = router.query
   return (
