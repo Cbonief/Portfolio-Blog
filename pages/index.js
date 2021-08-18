@@ -14,8 +14,8 @@ export default function Home({ posts }) {
       </Head>
 
       <div className='posts'>
-        {posts.map((post, index) => (
-          <Post key={index} post={post} />
+        {posts.map((post) => (
+          <Post key={post.key} post={post} />
         ))}
       </div>
     </div>
@@ -43,9 +43,10 @@ export async function getStaticProps() {
       slug,
       frontmatter,
       tags,
-      key: index
+      key: filename
     }
   })
+  console.log(posts)
 
   return {
     props: {

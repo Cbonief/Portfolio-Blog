@@ -11,8 +11,8 @@ export default function TagPage({ posts }) {
   return (
     <div>
       <div className='posts'>
-        {posts.map((post, index) => (
-          <Post key={index} post={post}/>
+        {posts.map((post) => (
+          <Post key={post.key} post={post}/>
         ))}
       </div>
     </div>
@@ -44,7 +44,7 @@ export async function getStaticProps({ params }) {
       slug,
       frontmatter,
       tags,
-      key: index
+      key: filename
     }
   })
 
@@ -75,7 +75,7 @@ export async function getStaticPaths() {
       slug,
       frontmatter,
       tags,
-      key: index
+      key: filename
     }
   })
 
