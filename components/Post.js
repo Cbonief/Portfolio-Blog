@@ -20,7 +20,7 @@ export default function Post({post}) {
 
       <div>
         <p className='card-tag'>Tags:</p>{post.tags.map((tag) => (
-          <Link href={`/tag/${tag}`}>
+          <Link key={post.key} href={`/tag/${tag}`}>
           <div className='card-tags'>
             <a >{capitalizeFirstLetter(tag)}</a>
           </div>
