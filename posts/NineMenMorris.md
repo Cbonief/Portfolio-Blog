@@ -1,7 +1,7 @@
 ---
 title: 'Nine Men Morris'
 date: 'August 13, 2021'
-excerpt: 'The classic game built on pygame and using the minimax algorithm for playing with AI'
+excerpt: 'The classic game built on pygame and using the minimax algorithm for playing with AI.'
 tags: 'python;game'
 cover_image: '/images/posts/img1.jpg'
 ---
@@ -63,7 +63,7 @@ The first thing I did was create a Nine Morris class to store the board, active 
 
 #### **The players**
 
-The white player will be considered as being equal to 1 and the black player as -1. This will be stored in a player class. The numbers were choosen because it´s easy to chang the active player with ``active_player = -active_player``.
+The white player will be considered as being equal to 1 and the black player as -1. This will be stored in a player class. The numbers were choosen because it´s easy to change the active player with ``active_player = -active_player``.
 
 ```python
 class Player:
