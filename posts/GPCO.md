@@ -3,7 +3,7 @@ title: 'GPCO - General Power Converter Optimizer'
 date: 'August 13, 2021'
 excerpt: 'Application for optimizing the CC-CC Boost Half Bridge power converter.'
 tags: 'python'
-cover_image: '/images/posts/img3.jpg'
+cover_image: '/images/posts/GPCO.jpg'
 ---
 
 
