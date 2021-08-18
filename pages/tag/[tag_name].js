@@ -27,7 +27,7 @@ export async function getStaticProps({ params }) {
   console.log(files)
 
   // Get slug and frontmatter from posts
-  const posts = files.map((filename) => {
+  const posts = files.map((filename, index) => {
     // Create slug
     const slug = filename.replace('.md', '')
 
@@ -43,7 +43,8 @@ export async function getStaticProps({ params }) {
     return {
       slug,
       frontmatter,
-      tags
+      tags,
+      key: index
     }
   })
 
@@ -57,7 +58,7 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join('posts'))
 
-  const posts = files.map((filename) => {
+  const posts = files.map((filename, index) => {
     // Create slug
     const slug = filename.replace('.md', '')
 
@@ -73,7 +74,8 @@ export async function getStaticPaths() {
     return {
       slug,
       frontmatter,
-      tags
+      tags,
+      key: index
     }
   })
 
@@ -90,8 +92,6 @@ export async function getStaticPaths() {
     )
     }
   );
-
-  console.log(paths)
 
   return {
     paths,
