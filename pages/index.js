@@ -3,53 +3,36 @@ import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
 import Post from '../components/Post'
+import marked from 'marked'
 import { sortByDate } from '../utils'
 
-export default function Home({ posts }) {
-  console.log(posts)
+export default function Home({
+  frontmatter: { title, date, cover_image },
+  slug,
+  content,
+}) {
   return (
     <div>
       <Head>
         <title>Carlos Franco Portfolio</title>
       </Head>
-
-      <div className='posts'>
-        {posts.map((post) => (
-          <Post key={post.key} post={post} />
-        ))}
+      <h1 className='post-title'>{title}</h1>
+        <img src={cover_image} alt='' width="120" height="120"  ALIGN="left" HSPACE="20"/>
+      <div className='cv-body' dangerouslySetInnerHTML={{ __html: marked(content) }}>
       </div>
     </div>
   )
 }
 
 export async function getStaticProps() {
-  // Get files from the posts dir
-  const files = fs.readdirSync(path.join('posts'))
+  const markdownWithMeta = fs.readFileSync(path.join('public/cv/cv.md'), 'utf-8')
 
-  // Get slug and frontmatter from posts
-  const posts = files.map((filename, index) => {
-    // Create slug
-    const slug = filename.replace('.md', '')
-
-    // Get frontmatter
-    const markdownWithMeta = fs.readFileSync(
-      path.join('posts', filename),
-      'utf-8'
-    )
-
-    const { data: frontmatter } = matter(markdownWithMeta)
-    const tags = frontmatter.tags.split(';')
-    return {
-      slug,
-      frontmatter,
-      tags,
-      key: filename
-    }
-  })
+  const { data: frontmatter, content } = matter(markdownWithMeta)
 
   return {
     props: {
-      posts: posts.sort(sortByDate),
+      frontmatter,
+      content,
     },
   }
 }

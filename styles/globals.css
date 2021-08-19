@@ -22,8 +22,8 @@ a {
 }
 
 img {
-  width: 100%;
   border-radius: 10px;
+  margin: 10px 10px;
 }
 
 header {
@@ -146,10 +146,9 @@ header a {
 }
 
 .post-body ul,ol {
-  font-size: 110%;
   line-height: 2.3;
   font-weight: bold;
-  margin: 10px 0;
+  padding-left: 20px;
   text-align: justify;
 }
 
@@ -159,6 +158,24 @@ header a {
   margin: 20px 0;
   line-height: 2.3;
   text-align: justify;
+}
+
+.cv-body ul,ol {
+  line-height: 2.3;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.cv-body{
+  text-align: justify;
+}
+
+.cv-body pre {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0px;
+  line-height: 2.3;
+  display: inline-block;
 }
 
 @media (max-width: 500px) {
