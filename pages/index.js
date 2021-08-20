@@ -2,9 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
-import Post from '../components/Post'
 import marked from 'marked'
-import { sortByDate } from '../utils'
 
 export default function Home({
   frontmatter: { title, date, cover_image },
@@ -14,7 +12,7 @@ export default function Home({
   return (
     <div>
       <Head>
-        <title>Carlos Franco Portfolio</title>
+        <title>Carlos Franco</title>
       </Head>
       <h1 className='post-title'>{title}</h1>
         <img className='my-photo' src={cover_image} alt='' width="120" height="120"  ALIGN="left"/>

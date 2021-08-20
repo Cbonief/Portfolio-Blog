@@ -4,11 +4,17 @@ import matter from 'gray-matter'
 import Post from '../../components/Post'
 import { sortByDate } from '../../utils'
 import { useRouter } from 'next/router'
+import { capitalizeFirstLetter } from '../../utils'
+import Head from 'next/head'
 
 export default function TagPage({ posts }) {
   const router = useRouter()
   const { tag_name } = router.query
   return (
+    <>
+    <Head>
+        <title>{capitalizeFirstLetter(tag_name)}</title>
+    </Head>
     <div>
       <div className='posts'>
         {posts.map((post) => (
@@ -16,6 +22,7 @@ export default function TagPage({ posts }) {
         ))}
       </div>
     </div>
+    </>
   )
 }
 

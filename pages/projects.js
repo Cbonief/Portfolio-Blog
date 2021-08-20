@@ -10,7 +10,7 @@ export default function Home({ posts }) {
   return (
     <div>
       <Head>
-        <title>Carlos Franco Portfolio</title>
+        <title>Carlos Franco - Projects</title>
       </Head>
 
       <div className='posts'>
