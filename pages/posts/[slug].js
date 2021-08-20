@@ -15,7 +15,7 @@ export default function PostPage({
       <Head>
         <title>{title}</title>
       </Head>
-      <Link href='/'>
+      <Link href='/projects'>
         <a className='btn btn-back'>Go Back</a>
       </Link>
       <div className='card card-page'>
