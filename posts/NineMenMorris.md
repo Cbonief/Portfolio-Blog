@@ -3,7 +3,7 @@ title: 'Nine Men Morris'
 date: 'August 13, 2021'
 excerpt: 'The classic game built on pygame and using the minimax algorithm for playing with AI.'
 tags: 'python;game'
-cover_image: '/images/posts/trilha.png'
+cover_image: '/images/posts/trilha.webp'
 ---
 
 # **About this project**
