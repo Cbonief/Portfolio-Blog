@@ -9,15 +9,66 @@ programming.
 
 Nowadays I'm very interested in learning web development, and look foward to a career in the area.
 
-The language I have worked the most with is Python, but I have also programmed in:
+The language I have worked the most with is Python, but I have also programmed in Java, C/C++, Javascript and VHDL.
 
-- Java:
-  - Mostly GUI. 
-  - I have also taught Java to my peers in college.
-- C/C++: 
-  - Programming microcontrollers.
-- Javascript: 
-  - I picked up this website template from Transversity Media, and made a few chages, such as the header, and the tag system. I look foward to making other projects in my spare time to increase my practical knowledge.
+In regards to my work ethic I'm a very proactive and easy going person and like to help whenever I can, but learned to take caution not to overburden myself while doing so.
 
-I'm a very proactive and easy going person and like to help whenever I can, but learned to take caution not to overburden myself while doing so.
+
+<br>
+<br>
+
+
+<div class="row">
+  <div class="column">
+    <h3 style="text-align:center">Programming Languages</h3>
+    <hr>
+    <p>
+
+  - Python
+  - C/C++
+  - Java
+  - JavaScript
+  
+  </div>
+  <div class="column">
+    <h3 style="text-align:center"> Programming Technologies</h3>
+    <hr>
+    <p>
+    
+  - Numpy; Pandas; Matplotlib; Beautiful Soup; Scipy
+  - PyQt5
+  - Java Swing
+  - Javascript: Node.js; React.js; Express.js; Next.js.
+  
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="row">
+  <div class="column">
+    <h3 style="text-align:center">Languages</h3>
+    <hr>
+    <p>
+
+  - English
+  - Portuguese
+  - Spanish
+  
+  </div>
+  <div class="column">
+    <h3 style="text-align:center"> Electrical Engineering</h3>
+    <hr>
+    <p>
+    
+  - Power Electronics
+  - Microcontrollers
+  - Control Systems
+  - Javascript: Node.js; React.js; Express.js; Next.js.
+  
+  </div>
+</div>
+
+
 

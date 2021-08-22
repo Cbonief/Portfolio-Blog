@@ -37,6 +37,7 @@ img {
 
 .column {
   flex: 50%;
+  padding-right: 30px;
 }
 
 header {
@@ -176,7 +177,6 @@ header a {
 
 .cv-body ul,ol {
   line-height: 2.3;
-  font-weight: bold;
   padding-left: 20px;
 }
 
