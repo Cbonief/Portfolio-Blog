@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import SocialFollow from './SocialFollow'
 
-social_medias = [
+const social_medias = [
   {name:'github', link:'https://www.github.com/Cbonief/'},
   {name:'linkedin', link:'https://www.linkedin.com/in/cbonief/'},
   {name:'twitter', link:'https://twitter.com/cbonief_me'}
@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header>
       <div className='header-container'>
-        <Link key={0} href='/' passHref>
+        <Link key={0} href='/' passHref={true}>
           <h2 className='header-title'>Carlos Franco</h2>
         </Link>
         <Link key={1} href='/projects'>
@@ -20,7 +20,7 @@ export default function Header() {
       </div>
       <div className='social-media-container'>
           {social_medias.map((media) => (
-            <SocialFollow key={media.name} link={media.link} />
+            <SocialFollow key={media.name} social_media={media.name} link={media.link} />
           ))}
       </div>
     </header>

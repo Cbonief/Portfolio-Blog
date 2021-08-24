@@ -1,6 +1,6 @@
 import SocialFollow from './SocialFollow'
 
-social_medias = [
+const social_medias = [
   {name:'github', link:'https://www.github.com/Cbonief/'},
   {name:'linkedin', link:'https://www.linkedin.com/in/cbonief/'},
   {name:'twitter', link:'https://twitter.com/cbonief_me'}
