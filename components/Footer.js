@@ -11,7 +11,7 @@ export default function Footer({}) {
     <footer>
       <div className='footer-container'>
           {social_medias.map((media) => (
-            <SocialFollow key={media.name} link={media.link} />
+            <SocialFollow key={media.name} social_media={media.name} link={media.link} passHref/>
           ))}
       </div>
     </footer>
