@@ -20,7 +20,7 @@ const icon_map = {
 export default function SocialFollow({social_media, link}) {
     return (
         <a href={link} className={social_media+" social"} target="_blank">
-        <FontAwesomeIcon icon={icon_map[social_media]} size="2x" />
+        <FontAwesomeIcon key={social_media} icon={icon_map[social_media]} size="2x" />
         </a>  
     )
   }

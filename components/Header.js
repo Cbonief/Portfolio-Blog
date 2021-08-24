@@ -1,21 +1,27 @@
 import Link from 'next/link'
 import SocialFollow from './SocialFollow'
 
+social_medias = [
+  {name:'github', link:'https://www.github.com/Cbonief/'},
+  {name:'linkedin', link:'https://www.linkedin.com/in/cbonief/'},
+  {name:'twitter', link:'https://twitter.com/cbonief_me'}
+]
+
 export default function Header() {
   return (
     <header>
       <div className='header-container'>
-        <Link href='/' passHref>
+        <Link key={0} href='/' passHref>
           <h2 className='header-title'>Carlos Franco</h2>
         </Link>
-        <Link href='/projects'>
+        <Link key={1} href='/projects'>
           <h2 className='header-page'>My Projects</h2>
         </Link>
       </div>
       <div className='social-media-container'>
-          <SocialFollow social_media='github' link='https://www.github.com/Cbonief/'/>
-          <SocialFollow social_media='linkedin' link='https://www.linkedin.com/in/cbonief/'/>
-          <SocialFollow social_media='twitter' link='https://twitter.com/cbonief_me'/>
+          {social_medias.map((media) => (
+            <SocialFollow key={media.name} link={media.link} />
+          ))}
       </div>
     </header>
   )
