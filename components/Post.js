@@ -14,13 +14,13 @@ export default function Post({post}) {
 
       <p>{post.frontmatter.excerpt}</p>
 
-      <Link href={`/posts/${post.slug}`}>
+      <Link href={`/posts/${post.slug}`} passHref>
         <a className='btn'>Read More</a>
       </Link>
 
       <div>
         <p className='card-tag'>Tags:</p>{post.tags.map((tag) => (
-          <Link key={post.key} href={`/tag/${tag}`}>
+          <Link key={post.key} href={`/tag/${tag}`} passHref>
           <div className='card-tags'>
             <a >{capitalizeFirstLetter(tag)}</a>
           </div>

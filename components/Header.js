@@ -11,16 +11,16 @@ export default function Header() {
   return (
     <header>
       <div className='header-container'>
-        <Link key={0} href='/' passHref={true}>
+        <Link key={0} href='/' passHref>
           <h2 className='header-title'>Carlos Franco</h2>
         </Link>
-        <Link key={1} href='/projects'>
+        <Link key={1} href='/projects' passHref>
           <h2 className='header-page'>My Projects</h2>
         </Link>
       </div>
       <div className='social-media-container'>
           {social_medias.map((media) => (
-            <SocialFollow key={media.name} social_media={media.name} link={media.link} />
+            <SocialFollow key={media.name} social_media={media.name} link={media.link} passHref/>
           ))}
       </div>
     </header>
