@@ -15,7 +15,9 @@ export default function Home({
         <title>Carlos Franco</title>
       </Head>
       <h1 className='post-title'>{title}</h1>
-        <img className='my-photo' src={cover_image} alt='' width="120px" height="120px"  ALIGN="left"/>
+      <div className='centered'>
+        <img className='my-photo' src={cover_image} alt=''/>
+      </div>
       <div className='cv-body' dangerouslySetInnerHTML={{ __html: marked(content) }}>
       </div>
     </div>

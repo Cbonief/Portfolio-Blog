@@ -27,11 +27,7 @@ export default function TagPage({ posts }) {
 }
 
 export async function getStaticProps({ params }) {
-  // Get files from the posts dir
-  console.log(path.join('posts'))
   const files = fs.readdirSync(path.join('posts'))
-
-  console.log(files)
 
   // Get slug and frontmatter from posts
   const posts = files.map((filename, index) => {
@@ -46,7 +42,6 @@ export async function getStaticProps({ params }) {
 
     const { data: frontmatter } = matter(markdownWithMeta)
     const tags = frontmatter.tags.split(';')
-    console.log(tags)
     return {
       slug,
       frontmatter,

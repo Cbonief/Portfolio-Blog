@@ -4,6 +4,8 @@ date: 'August 19, 2021'
 cover_image: '/images/me.jpg'
 ---
 
+
+<div class="cv-section">
 I am an Electrical Engineering Student. My main expertise is in designing power converters and embedded system
 programming.
 
@@ -12,13 +14,11 @@ Nowadays I'm very interested in learning web development, and look foward to a c
 The language I have worked the most with is Python, but I have also programmed in Java, C/C++, Javascript and VHDL.
 
 In regards to my work ethic I'm a very proactive and easy going person and like to help whenever I can, but learned to take caution not to overburden myself while doing so.
+<div>
 
 
-<br>
-<br>
 
-
-<div class="row">
+<div class="cv-row">
   <div class="column">
     <h3 style="text-align:center">Programming Languages</h3>
     <hr>
@@ -38,15 +38,12 @@ In regards to my work ethic I'm a very proactive and easy going person and like 
   - Numpy; Pandas; Matplotlib; Beautiful Soup; Scipy
   - PyQt5
   - Java Swing
-  - Javascript: Node.js; React.js; Express.js; Next.js.
+  - Javascript: Node.js; React.js; Express.js; Next.js
   
   </div>
 </div>
 
-<br>
-<br>
-
-<div class="row">
+<div class="cv-row">
   <div class="column">
     <h3 style="text-align:center">Languages</h3>
     <hr>
@@ -62,10 +59,11 @@ In regards to my work ethic I'm a very proactive and easy going person and like 
     <hr>
     <p>
     
-  - Power Electronics
-  - Microcontrollers
-  - Control Systems
-  - Javascript: Node.js; React.js; Express.js; Next.js.
+  - Power Electronics (Converter Design and Optimization)
+  - Microcontrollers Programming
+  - Control Systems (PID, MPC)
+  - Electrical Circuits (Filters, Amplifiers)
+  - Antennas and Wave Guides.
   
   </div>
 </div>
