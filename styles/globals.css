@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.centered{
+  text-align: center;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -142,6 +146,8 @@ footer a {
   margin-bottom: 20px;
 }
 
+
+
 .posts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -255,10 +261,14 @@ a.instagram {
   margin-right: 0.5rem;
 }
 
+.container.calculator{
+  margin-top: 30px;
+}
+
 
 @media (max-width: 500px) {
   header {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
   
   .header-title{
@@ -326,8 +336,11 @@ a.instagram {
   }
   
   .centered{
-    display: flex;
     justify-content: center;
+  }
+
+  .flex{
+    display: flex;
   }
 
 }

@@ -11,7 +11,7 @@ export default function PostPage({
   content,
 }) {
   return (
-    <>
+    <div className='container'>
       <Head>
         <title>{title}</title>
       </Head>
@@ -26,7 +26,7 @@ export default function PostPage({
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

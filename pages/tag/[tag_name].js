@@ -11,7 +11,7 @@ export default function TagPage({ posts }) {
   const router = useRouter()
   const { tag_name } = router.query
   return (
-    <>
+    <div className='container'>
     <Head>
         <title>{capitalizeFirstLetter(tag_name)}</title>
     </Head>
@@ -22,7 +22,7 @@ export default function TagPage({ posts }) {
         ))}
       </div>
     </div>
-    </>
+    </div>
   )
 }
 

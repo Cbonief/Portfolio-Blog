@@ -5,9 +5,9 @@ import Head from 'next/head'
 import Post from '../components/Post'
 import { sortByDate } from '../utils'
 
-export default function Home({ posts }) {
+export default function Projects({ posts }) {
   return (
-    <div>
+    <div className='container'>
       <Head>
         <title>Carlos Franco - Projects</title>
       </Head>

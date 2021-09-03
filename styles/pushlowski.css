@@ -1,0 +1,74 @@
+.input{
+    display: inline-block;
+    size: fit-content;
+    padding: 8px 16px;
+    margin: 0px 4px 0px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    width: 100px;
+}
+
+.calculator-inputs{
+    margin-top: 40px;
+}
+
+.input_container{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.input_name{
+    width: 86px;
+    display: inline-block;
+}
+
+select{
+    width: fit-content;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.calculator{
+    display: flex;
+    min-height: calc(100vh - 170px);
+}
+
+.calculator-column{
+    flex: 50%;
+    margin: 40px 80px;
+}
+
+.graph-container{
+    width: fit-content;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.output-container{
+    width: fit-content;
+    min-width: 60px;
+    height: fit-content;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: aliceblue;
+    border: solid;
+    border-color: rgb(32, 152, 189);
+    display: flex;
+    margin: 40px auto;
+}

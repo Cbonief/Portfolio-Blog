@@ -10,12 +10,12 @@ export default function Home({
   content,
 }) {
   return (
-    <div>
+    <div className='container'>
       <Head>
         <title>Carlos Franco</title>
       </Head>
       <h1 className='post-title'>{title}</h1>
-      <div className='centered'>
+      <div className='centered flex'>
         <img className='my-photo' src={cover_image} alt=''/>
       </div>
       <div className='cv-body' dangerouslySetInnerHTML={{ __html: marked(content) }}>

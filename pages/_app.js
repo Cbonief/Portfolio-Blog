@@ -1,12 +1,13 @@
 import Header from '../components/Header'
 import '../styles/globals.css'
+import '../styles/pushlowski.css'
 import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <main className='container'>
+      <main>
         <Component {...pageProps} />
       </main>
       <Footer />
