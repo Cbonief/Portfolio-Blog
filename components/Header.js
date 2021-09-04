@@ -17,7 +17,7 @@ export default function Header() {
         <Link key={1} href='/projects' passHref>
           <h2 className='header-page'>My Projects</h2>
         </Link>
-        <Link key={2} href='/pushlowsk_calculator' passHref>
+        <Link key={2} href='/pushlowski_calculator' passHref>
           <h2 className='header-page'>Pushlowski</h2>
         </Link>
       </div>
