@@ -34,7 +34,7 @@ If a player is left with only three pieces in phase two, it is said that the pla
 ### **The Board**
 The game is played on the following board. which consists of 24 locations where the players can place and move pieces.
 
-<img src="https://png.vector.me/files/images/1/2/124490/nine_mens_morris_game_board_clip_art.jpg" alt="drawing" style="width:400px; heigth:400px;"/>
+<img src="https://png.vector.me/files/images/1/2/124490/nine_mens_morris_game_board_clip_art.jpg" alt="drawing" style="width:100%; heigth:400px;"/>
 
 ### **Aditional Info**
 You can read more about the game at:
@@ -96,10 +96,10 @@ We´ll also have a class for the move itself, storing the position where the mov
 
 ```python
 class Move:
-    def __init__(self, position, move_type, final_position=None):
-        self.move_type = move_type
-        self.position = position
-        self.final_position = final_position
+    def __init__(self, start, type, end):
+        self.move_type = type
+        self.position = start
+        self.final_position = end
 ```
 
 This class also has a method to verify if the move is valid, a method to pretty print the move, and a method to hash it (more about this later).
@@ -142,14 +142,14 @@ def run(self):
     while self.running:
         self.event_handler()
 		
-        if self.active_window == Window.MENU:
+        if self.active_window == MENU:
             self.menu()
-        elif self.active_window == Window.MATCH:
+        elif self.active_window == MATCH:
             self.match()
-        elif self.active_window == Window.CONFIG:
+        elif self.active_window == CONFIG:
             self.config()
 	
-        self.window_manager[self.active_window].show(self.window)
+        self.show_active_window()
 	
         timer.tick(60)
         pygame.display.update()
@@ -162,7 +162,7 @@ The window manager is a dictionary storing all the windows in the game. This all
 for easy on and off switching of all widgets.
 
 ## **To Do**
-Add in game timer.
+<strike>Add in game timer</strike>
 
 Add minimal (but random) time for AI to play.
 

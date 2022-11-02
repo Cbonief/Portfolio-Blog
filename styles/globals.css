@@ -46,7 +46,7 @@ img {
   flex: 50%;
   padding-right: 30px;
 }
-
+  
 header {
   background: steelblue;
   color: #fff;
@@ -253,7 +253,7 @@ a.twitter {
 }
 
 a.instagram {
-  color: black;
+  color: white;
 }
 
 .social-media-container{

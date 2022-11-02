@@ -39,6 +39,7 @@ In regards to my work ethic I'm a very proactive and easy going person and like 
   - PyQt5
   - Java Swing
   - Javascript: Node.js; React.js; Express.js; Next.js
+  - Firebase
   
   </div>
 </div>
