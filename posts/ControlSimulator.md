@@ -43,7 +43,6 @@ To add a controller that's not on the Controllers folder, just add a python file
         # Insert action control code 
         pass
 
-
     AuxiliaryDictionary['class'] = CustomController
 
 This allows for a new controller to be added without having to change the exisiting code. If a class variable represents an internal state, add an underline to it's name so the GUI won't add an edit box for it.
