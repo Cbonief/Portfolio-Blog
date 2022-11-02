@@ -9,7 +9,7 @@ cover_image: '/images/me.jpg'
 
 My name is Carlos Franco, I love solving problems and learning new things on the fly.
 
-Last year I graduated as a Bachelor in Electrical Engineering. During graduation I specialized in designing power converters and control systems. Realizing where, and how I could automate the design process is what drew me in the most.
+Last year I graduated as a Bachelor in Electrical Engineering. During graduation I specialized in designing power converters and control systems. Realizing where and how I could automate the design process is what drew me in the most.
 
 Nowadays I'm very interested in learning web development, and look foward to a career in the area.
 
