@@ -6,14 +6,15 @@ cover_image: '/images/me.jpg'
 
 
 <div class="cv-section">
-I am an Electrical Engineering Student. My main expertise is in designing power converters and embedded system
-programming.
+
+My name is Carlos Franco, I love solving problems and learning new things on the fly.
+
+I have a bachelors degree on Electrical Engineering, and I'd say my main expertise is in designing power converters and control systems.
 
 Nowadays I'm very interested in learning web development, and look foward to a career in the area.
 
 The language I have worked the most with is Python, but I have also programmed in Java, C/C++, Javascript and VHDL.
 
-In regards to my work ethic I'm a very proactive and easy going person and like to help whenever I can, but learned to take caution not to overburden myself while doing so.
 <div>
 
 
