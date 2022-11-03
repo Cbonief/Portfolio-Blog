@@ -23,7 +23,8 @@ At this moment, there is not an official package release, but it's being worked 
 But you can still use the tool by cloning the repo, and running:
 
     pip install -r requirements.txt
-Usage and extra features.
+
+# Usage and extra features.
 The basic usage of the tool is very straight foward, just choose the controller and it's parameters. Unfortunately there isn't a system config area yet, so the system has to be changed via code.
 
 To add a controller that's not on the Controllers folder, just add a python file to the folder and program the controller using the following template.
