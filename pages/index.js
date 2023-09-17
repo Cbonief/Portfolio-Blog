@@ -113,7 +113,7 @@ export default function Home({
         </div>
         <div class="cv-body">
             <div class="cv-section">
-            <p>I'm Carlos Franco, I love math and problem solving.</p>
+            <p>I&apos;m Carlos Franco, I love math and problem solving.</p>
 
             <p>My technological background starts with my graduation in Electrical Engineering, started in 2016 and finished in 2021, where I specialized in power converters and control systems. What I enjoyed the most was applying optimization algorithms, like a Genetic Algorithm, to design projects and to tune controllers. I also learned a lot about electronics, energy/signal transmission.</p>
 
@@ -123,7 +123,7 @@ export default function Home({
 
             <p>While still in college I became interested in Game Engines and Physics Simulations, so I worked on a couple of projects, the main ones being my implementation of Nine Men Morris, and my implement of a water tank control simulation. Working on these kind of projects is where I learned the most about algorithms, time complexity, threading and all sorts of amazing concepts.</p>
 
-            <p>I like to keep my mind open to learning new concepts and understanding why they could be useful in the future. Right now I'm learning more about Backend Development using the Django Framework. After that I want to jump in to ASP.NET.</p>
+            <p>I like to keep my mind open to learning new concepts and understanding why they could be useful in the future. Right now I&apos;m learning more about Backend Development using the Django Framework. After that I want to jump in to ASP.NET.</p>
 
                 <div class="cv-row">
                     <SkillSet skillList={programmingLanguages} listName="General Programming"/>
