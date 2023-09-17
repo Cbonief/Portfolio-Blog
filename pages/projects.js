@@ -3,7 +3,8 @@ import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
 import Post from '../components/Post'
-import { sortByDate } from '../utils'
+import { sortByDate, transformAnchortoNextLink } from '../utils'
+
 
 export default function Projects({ posts }) {
   return (

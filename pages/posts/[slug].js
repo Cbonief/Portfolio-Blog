@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import marked from 'marked'
+import {marked} from 'marked'
 import Link from 'next/link'
 import Head from 'next/head'
 
@@ -15,9 +15,7 @@ export default function PostPage({
       <Head>
         <title>{title}</title>
       </Head>
-      <Link href='/projects'>
-        <a className='btn btn-back'>Go Back</a>
-      </Link>
+      <Link href='/projects' className='btn btn-back'> Go Back</Link>
       <div className='card card-page'>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>

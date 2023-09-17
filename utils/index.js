@@ -14,3 +14,8 @@ export function makeArr(startValue, stopValue, cardinality) {
   }
   return arr;
 }
+
+export function transformAnchortoNextLink(htmlContent) {
+  // Replace <a> tags with <PlaceholderLink> tags.
+  return htmlContent.replace(/<a href="(.*?)">(.*?)<\/a>/g, '<PlaceholderLink href="$1">$2</PlaceholderLink>');
+}

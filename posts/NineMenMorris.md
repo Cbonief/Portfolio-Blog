@@ -9,7 +9,7 @@ cover_image: '/images/posts/trilha.webp'
 # **About this project**
 This is a **pygame** implementation of the classic game Nine Men´s Morris, also called Mill, Mills and even Cowboy Checkers.
 
-The project is fully available at my <a href="https://github.com/Cbonief/Nine-Men-Morris" style="color: Blue">Github Repo</a>.
+The project is fully available at my <Link href="https://github.com/Cbonief/Nine-Men-Morris" style="color: Blue">Github Repo</Link>.
 
 
 ## **Nine Men´s Morris**
@@ -39,13 +39,13 @@ The game is played on the following board. which consists of 24 locations where 
 ### **Aditional Info**
 You can read more about the game at:
 
-<a href="https://en.wikipedia.org/wiki/Nine_men%27s_morris" style="color: Blue">Wikipedia</a>
+<Link href="https://en.wikipedia.org/wiki/Nine_men%27s_morris" style="color: Blue">Wikipedia</Link>
 
-<a href="https://web.archive.org/web/20041121040028/http://mc2.vicnet.net.au/home/aura/shared_files/Berger1.pdf" style="color: Blue">Old Game</a>
+<Link href="https://web.archive.org/web/20041121040028/http://mc2.vicnet.net.au/home/aura/shared_files/Berger1.pdf" style="color: Blue">Old Game</Link>
 
-<a href="http://library.msri.org/books/Book29/files/gasser.pdf" style="color: Blue">Perfect Game Solution</a>
+<Link href="http://library.msri.org/books/Book29/files/gasser.pdf" style="color: Blue">Perfect Game Solution</Link>
 
-<a href="https://althofer.de/stahlhacke-lasker-morris-2003.pdf" style="color: Blue">Another Perfect Game Solution</a>
+<Link href="https://althofer.de/stahlhacke-lasker-morris-2003.pdf" style="color: Blue">Another Perfect Game Solution</Link>
 
 ## **The Implementation**
 

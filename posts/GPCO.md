@@ -6,7 +6,7 @@ tags: 'python'
 cover_image: '/images/posts/GPCO.jpg'
 ---
 
-<a href="https://github.com/Cbonief/GPCO" style="color: Blue">Github Repo</a>
+<Link href="https://github.com/Cbonief/GPCO" style="color: Blue">Github Repo</Link>
 
 **GPCO** is a python based efficiency optimizer for switched-mode power converters that is able to optimize both the operating frequency and the components used, while satisfying the design constraints. It does this by separating the discrete and continuous variables into two layers of optimization. The superficial layer uses a genetic algorithm to handle the discrete variables, while the second layer uses a numeric, gradient based algorithm to optimize the continuous variables.
 

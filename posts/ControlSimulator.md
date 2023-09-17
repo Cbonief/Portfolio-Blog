@@ -1,7 +1,7 @@
 ---
 title: 'Control System Simulator'
 date: 'November 02, 2022'
-excerpt: 'A visual tool for learning controller design.'
+excerpt: 'A visual tool for learning controller design. Simulates a water tank using using different integration methods.'
 tags: 'python;control'
 cover_image: '/images/posts/control.jpg'
 ---
@@ -15,7 +15,7 @@ Controlab-py is a project I started during my college graduation in Electrical E
 At this moment, it simulates the physics of a water tank, and a controller attached to it. The simulation is done using the Runge Kutta, or Dormand Prince (or ODE45), before it's displayed to the user. The idea is to have a visual tool to help understand how controllers work and dynamic systems work, whereas students are usually "stuck" to block diagrams.
 
 # Main Interface
-<img src="https://user-images.githubusercontent.com/62687996/199091766-d7f9ef6a-3604-4a34-883a-d7d2a2483d19.png" alt="drawing" width="500"/>
+<img class='control-sim-panel' src="https://user-images.githubusercontent.com/62687996/199091766-d7f9ef6a-3604-4a34-883a-d7d2a2483d19.png" alt="drawing"/>
 
 # How to install
 At this moment, there is not an official package release, but it's being worked on.

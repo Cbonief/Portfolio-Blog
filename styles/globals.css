@@ -4,6 +4,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  --second_background: #536a43;
+  --body_background: #9aa38c;
+  --off_white: #f8f7f1;
+  --cv_progress: #93785E;
 }
 
 .centered{
@@ -12,6 +16,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: var(--body_background);
 }
 
 p {
@@ -31,32 +36,79 @@ img {
 }
 
 .my-photo {
-  width: 120px;
-  height: 120px;
-  margin: 10px 10px;
-  float: left;
+  width: 40%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
+.row {
+  display: flex;
+}
 .cv-row {
   display: flex;
   margin-top: 40px;
 }
 
-.column {
+.skills-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space between skill rows */
+}
+
+.skill-name {
+  flex: 1; /* Take up remaining space */
+  padding-right: 10px; /* Space between skill name and progress bar */
+}
+
+.progress-bar {
+  flex: 1; /* Twice the width of skill name for better visualization */
+  height: 20px; /* Height of the progress bar */
+  background-color: #e0e0e0; /* Light grey background for unfilled portion */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures inner div doesn't spill out */
+}
+
+.progress {
+  height: 100%; /* Fill the entire height of the progress bar */
+  background-color: var(--cv_progress); /* Color for the filled portion */
+  border-radius: 10px; /* Rounded corners */
+}
+
+
+.cv-title{
+  margin-top: 10%;
+  margin-left: 10%
+}
+
+.column{
   flex: 50%;
-  padding-right: 30px;
+}
+
+.column:first-child {
+  padding-right: 40px;
+}
+
+.column:last-child {
+  padding-left: 40px;
 }
   
 header {
-  background: steelblue;
-  color: #fff;
+  background: var(--second_background);
+  color: var(--off_white);
   padding: 5px;
   margin-bottom: 40px;
   display: flex;
 }
 
 header a {
-  color: #fff;
+  color: var(--off_white);
 }
 
 .header-title{
@@ -66,13 +118,13 @@ header a {
 }
 
 .header-title:hover{
-  color: rgb(200, 200, 200);
+  color: #dddcd6;
 }
 
 .header-page{
   display: inline-block;
   font-size: larger;
-  color: rgb(220, 220, 220);
+  color: var(--off_white);
   cursor: pointer;
   margin-right: 20px;
 }
@@ -89,8 +141,8 @@ header a {
 
 footer {
   position: relative;
-  background: steelblue;
-  color: #fff;
+  background: var(--second_background);
+  color: var(--off_white);
   padding: 5px;
   margin-top: 40px;
   bottom: 0;
@@ -98,7 +150,7 @@ footer {
 }
 
 footer a {
-  color: #fff;
+  color: var(--off_white);
 }
 
 .footer-title{
@@ -114,16 +166,16 @@ footer a {
 .container {
   max-width: 768px;
   margin: 0px auto;
-  overflow: auto;
   padding: 0 10px;
   position: relative;
+  
   min-height: calc(100vh - 170px);
 }
 
 .btn {
   display: inline-block;
-  background: steelblue;
-  color: #fff;
+  background: var(--second_background);
+  color: var(--off_white);
   border: none;
   padding: 8px 16px;
   border-radius: 5px;
@@ -131,6 +183,8 @@ footer a {
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .btn:focus {
@@ -147,8 +201,6 @@ footer a {
   margin-bottom: 20px;
 }
 
-
-
 .posts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -157,16 +209,30 @@ footer a {
 }
 
 .card {
-  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: 8px;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--off_white);
+}
+
+.card-content{
+  flex: 1;
 }
 
 .card-page {
-  padding: 15px 30px;
+  padding: 50px 100px;
 }
+
+@media screen and (max-width: 768px){
+  .card-page {
+    padding: 5px 20px;
+  }
+}
+
 
 .card-tag {
   font-weight: bold;
@@ -222,6 +288,88 @@ footer a {
   text-align: justify;
 }
 
+.meter {
+  box-sizing: content-box;
+  height: 20px; /* Can be anything */
+  position: relative;
+  margin: 60px 0 20px 0; /* Just for demo spacing */
+  background: #555;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43, 194, 83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43, 194, 83) 37%,
+    rgb(84, 240, 84) 69%
+  );
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+.meter > span:after,
+.animate > span > span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+.animate > span:after {
+  display: none;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.orange > span {
+  background-image: linear-gradient(#f1a165, #f36d0a);
+}
+
+.red > span {
+  background-image: linear-gradient(#f0a3a3, #f42323);
+}
+
+.nostripes > span > span,
+.nostripes > span::after {
+  background-image: none;
+}
+
 .cv-body pre {
   background: #f4f4f4;
   padding: 20px;
@@ -266,6 +414,39 @@ a.instagram {
   margin-top: 30px;
 }
 
+.control-sim-panel {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.quadtree-gif {
+  width: 90%;
+  margin-left: 5%;
+}
+
+@media screen and (min-width: 1080px) {
+  .control-sim-panel {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .control-sim-panel {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .column:first-child {
+    padding-right: 10px;
+  }
+
+  .column:last-child {
+    padding-left: 10px;
+  }
+}
 
 @media (max-width: 500px) {
   header {
@@ -274,17 +455,6 @@ a.instagram {
   
   .header-title{
     margin-right: 0px;
-  }
-  
-  .header-page{
-    display: inline-block;
-    font-size: larger;
-    color: rgb(220, 220, 220);
-    cursor: pointer;
-  }
-  
-  .header-page:hover{
-    color: rgb(180, 180, 180);
   }
   
   .header-container{
@@ -328,9 +498,17 @@ a.instagram {
   
   .column {
     flex: 50%;
-    padding-right: 30px;
     margin-top: 30px;
   }
+
+  .column:first-child {
+    padding-right: 0px;
+  }
+
+  .column:last-child {
+    padding-left: 0px;
+  }
+
 
   .cv-section {
     margin-bottom: 30px;
@@ -344,4 +522,18 @@ a.instagram {
     display: flex;
   }
 
+}
+
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1080px;
+  }
+  .posts{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+code {
+  text-wrap: wrap;
 }

@@ -25,6 +25,35 @@ For that reason am now interested in career as a software developer. The languag
 
   - Python
   - C/C++
+  - C#
+  - Java
+  - JavaScript
+  - GDScript
+  
+  </div>
+  <div class="column">
+    <h3 style="text-align:center"> Programming Tech</h3>
+    <hr>
+    <p>
+    
+  - Numpy; Pandas; Matplotlib; Beautiful Soup; Scipy
+  - PyQt5
+  - Java Swing
+  - Node.js; React.js; Express.js; Next.js
+  - Firebase
+  
+  </div>
+</div>
+
+<div class="cv-row">
+  <div class="column">
+    <h3 style="text-align:center">Web Development</h3>
+    <hr>
+    <p>
+
+  - Django
+  - C/C++
+  - C#
   - Java
   - JavaScript
   - GDScript
