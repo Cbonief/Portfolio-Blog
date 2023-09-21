@@ -205,7 +205,7 @@ export default function Home({
                 <h5 style={{"margin": "0px"}}><i>Dec 2021 - Feb 2023</i></h5>
                 <p style={{"margin": "0px"}}><b>Barista -&gt; Shift Supervisor</b>: As a Barista I had to micromanage my tasks to achieve a steady work flow while maintaning a high product quality and customer connection. I later became a Shift Supervisor, and in that position I had to organize the shift, making sure that my colleagues had the tools to succeed, while still giving them agency. This included organizing stocks, positioning baristas and looking out for the general state of the store.</p>
                 <hr></hr>
-                <h4 style={{"marginTop": "10px"}} className='cv-job-name'>Adam & Joe's Knows Lunch</h4>
+                <h4 style={{"marginTop": "10px"}} className='cv-job-name'>Adam & Joe&apos;s Knows Lunch</h4>
                 <h5 style={{"margin": "0px"}}><i>Feb 2023 - Sep 2023</i></h5>
                 <p style={{"margin": "0px"}}><b>Front Desk</b>: Made sure the restaurant was ready for customer. Took order over the phone and in person. Always kept a high standard of service.</p>
               </div>
