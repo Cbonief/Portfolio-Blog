@@ -20,6 +20,9 @@ export default function Header() {
         <Link key={2} href='/pushlowski_calculator' passHref>
           <h2 className='header-page'>Pushlowski</h2>
         </Link>
+        <Link key={3} href="/#job-history" passHref>
+          <h2 className='header-page'>Job History</h2>
+        </Link>
       </div>
       <div className='social-media-container'>
           {social_medias.map((media) => (

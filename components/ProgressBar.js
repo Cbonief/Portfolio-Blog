@@ -4,9 +4,7 @@ function ProgressBar({ currentValue, maxValue }) {
   // Calculate the width of each circle and spacing
 
   const percentage = Math.round(100*currentValue/maxValue);
-  console.log(percentage);
   const style = {"width": percentage+'%'};
-  console.log(style);
 
   return (
     <>

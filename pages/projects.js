@@ -15,7 +15,7 @@ export default function Projects({ posts }) {
 
       <div className='posts'>
         {posts.map((post) => (
-          <Post key={post.key} post={post} />
+          <Post key={post.frontmatter.title} post={post} />
         ))}
       </div>
     </div>
