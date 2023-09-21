@@ -110,26 +110,23 @@ export default function Home({
   const router = useRouter();
   const hash = router.query;
   console.log(hash)
-
-  const toggleAccordionsBasedOnHash = () => {
-    const hash = window.location.hash;
-    if (hash === '#my-history' && myHistoryRef.current) {
-      toggleAccordion(myHistoryRef.current);
-      if (jobHistoryRef.current && jobHistoryRef.current.classList.contains('active')) {
-        toggleAccordion(jobHistoryRef.current);
-      }
-    } else if (hash === '#job-history' && jobHistoryRef.current) {
-      toggleAccordion(jobHistoryRef.current);
-      if (myHistoryRef.current && myHistoryRef.current.classList.contains('active')) {
-        toggleAccordion(myHistoryRef.current);
-      }
-    }
-  };
-
   
 
   useEffect(() => {
-    console.log("Loaded page")
+    const toggleAccordionsBasedOnHash = () => {
+      const hash = window.location.hash;
+      if (hash === '#my-history' && myHistoryRef.current) {
+        toggleAccordion(myHistoryRef.current);
+        if (jobHistoryRef.current && jobHistoryRef.current.classList.contains('active')) {
+          toggleAccordion(jobHistoryRef.current);
+        }
+      } else if (hash === '#job-history' && jobHistoryRef.current) {
+        toggleAccordion(jobHistoryRef.current);
+        if (myHistoryRef.current && myHistoryRef.current.classList.contains('active')) {
+          toggleAccordion(myHistoryRef.current);
+        }
+      }
+    };
     const hash = window.location.hash;
     switch (hash) {
       case '#job-history':
@@ -146,7 +143,6 @@ export default function Home({
     
     // Handle hash change
     const handleHashChange = () => {
-      console.log("Changed")
       toggleAccordionsBasedOnHash();
     };
 
