@@ -143,30 +143,20 @@ export default function Home({
         }
         break;
     }
-
-    // Listen for route changes in Next.js
-    const handleRouteChange = (url) => {
-      console.log("Changed")
-      if (url.includes('#')) {
-        toggleAccordionsBasedOnHash();
-      }
-    };
-
+    
     // Handle hash change
     const handleHashChange = () => {
       console.log("Changed")
       toggleAccordionsBasedOnHash();
     };
 
-    router.events.on('routeChangeComplete', handleRouteChange);
     window.addEventListener('hashchange', handleHashChange);
 
     // Cleanup
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
       window.removeEventListener('hashchange', handleHashChange);
     };
-  }, []);
+  }, [toggleAccordionsBasedOnHash]);
   
 
   
