@@ -35,16 +35,10 @@ img {
   border-radius: 10px;
 }
 
-.my-photo {
-  width: 40%;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 .cv-row {
   display: flex;
@@ -81,10 +75,26 @@ img {
   border-radius: 10px; /* Rounded corners */
 }
 
+.my-photo {
+  width: 40%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 
-.cv-title{
+.cv-title-container {
   margin-top: 10%;
-  margin-left: 10%
+  flex: 1
+}
+
+.cv-title {
+  margin-top: 10%;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.cv-quote{
+  text-align: center;
+  font-style: italic;
 }
 
 .column{
@@ -463,8 +473,25 @@ a.instagram {
   }
 
   .my-photo {
+    height: auto;
     float: none;
-    margin: 20px auto 20px auto;
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
+
+  .cv-title-container {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  
+  .cv-title {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  
+  .cv-quote{
+    text-align: center;
+    font-style: italic;
   }
 
   .posts {
@@ -532,6 +559,8 @@ a.instagram {
   .posts{
     grid-template-columns: repeat(3, 1fr);
   }
+
+  
 }
 
 code {
