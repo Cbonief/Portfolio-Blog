@@ -152,7 +152,7 @@ export default function Home({
     return () => {
       window.removeEventListener('hashchange', handleHashChange);
     };
-  }, [toggleAccordionsBasedOnHash]);
+  }, []);
   
 
   
