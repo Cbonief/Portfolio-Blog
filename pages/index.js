@@ -179,8 +179,6 @@ export default function Home({
             <img className="my-photo" src="/images/me.jpg" alt=""/>
             <div className="cv-title-container">
               <h1 className="cv-title">About Me</h1>
-              <p className='cv-quote'>I&apos;m all I want to be.</p>
-              <p className='cv-quote'>Yet I always wanna be more.</p>
             </div>
         </div>
         <div className="cv-body">
